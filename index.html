@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyGallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MyGallery</h1>
+      <div class="album-filter">
+        <button onclick="filterAlbum('all')">Semua</button>
+        <button onclick="filterAlbum('keluarga')">Keluarga</button>
+        <button onclick="filterAlbum('liburan')">Liburan</button>
+      </div>
+    </header>
+
+    <main class="gallery" id="gallery">
+      <!-- Gambar dimuat lewat JS -->
+    </main>
+
+    <!-- Modal Gambar -->
+    <div id="modal" class="modal" onclick="closeModal()">
+      <img id="modal-img" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
